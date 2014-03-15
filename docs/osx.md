@@ -28,7 +28,11 @@ Installing Xcode
 ---------------------------------------------
 To use openFrameworks with OS X, you need to have Xcode 4+ installed. 
 
-After downloading Xcode from the App Store, make sure to install the Xcode Command line tools using the Download tab in the Xcode preferences or typing "xcode-select -install" in your Terminal.
+You can download and install Xcode from the App Store.
+
+After the Xcode installation, make sure to install the Xcode command line tools using the Download tab in the Xcode preferences.
+
+You can also install Xcode command line tools typing "xcode-select -install" in your Terminal.
 
 <a name="running" />
 Running the examples
@@ -38,20 +42,23 @@ You can run any project in the examples folder by opening its relative .xcodepro
 ![The .xcodeproj file of the GraphicsExample ](http://i.imgur.com/0WbPVqF.png)
 
 
+Each project needs to be built before it can run, Xcode uses [schemes](https://developer.apple.com/library/mac/featuredarticles/XcodeConcepts/Concept-Schemes.html) to define the products to build. 
 
-Each project needs to be built before it can run, Xcode uses [schemes](https://developer.apple.com/library/mac/featuredarticles/XcodeConcepts/Concept-Schemes.html) to define the products to build. Usually you will find three schemes: openFrameworks, a debug and a release target for the example.
+For each example you will find three schemes: openFrameworks, a debug and a release target for the project.
 
-To run the project make sure the debug example's scheme is selected and hit the Build & Run button (cmd + R).
+To run the project make sure the debug example's scheme is selected and hit the Build & Run button (the triangle in the toolabar).
 
-![The Build & Run button is the triangular one ;)](http://i.imgur.com/A4GZsgT.png)
+In this case we're building the GraphicsExample:
+
+![](http://i.imgur.com/A4GZsgT.png)
 
 <a name="errors" />
 Errors and Warnings
 ---------------------------------------------
-Whilst you're 
+While the app is building Xcode will show you the number of warnings (in yellow) and errors (in red). 
+Most of the time you can ignore the warnings, but if your app has a high number of errors it will likely fail building. See below for common issues when building.
 
 ![](http://i.imgur.com/rNUTH7l.jpg)
-
 
 
 
