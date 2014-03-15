@@ -61,6 +61,7 @@ To rename your project name click twice (as you usually do in OSX) on the projec
 To change the name of your schemas: click on "Manage schemes" and rename the Schemes by selecting and clicking twice on them (as per above) or by just hitting Enter
 
 ![](http://i.imgur.com/8cHC9eB.png)
+
 ![](http://i.imgur.com/NNtXWO3.png)
 
 
@@ -80,8 +81,15 @@ Xcode is smart enough to add the eventual Header paths to your project so you do
 (screenshot of final folder structure)
 
 
+Errors and Warnings
+---------------------------------------------
+
+
+![](http://i.imgur.com/rNUTH7l.jpg)
+
+
 Failed Build
--------------
+---------------------------------------------
 There are a few common issues that cause your sketch build to fail:
 
 - Lexical or Preprocessor Issue: "'tr1/memory' not found"
@@ -94,6 +102,8 @@ Xcode Terminal may not be installed (see above for instructions)
 This usually happens when addons have been added incorrectly (see above for instructions)
 
 
+Change Base SDK
+---------------------------------------------
 
 
 openFrameworks resources
