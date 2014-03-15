@@ -5,7 +5,7 @@ OS X
 To use openFrameworks with OS X, you need to have Xcode installed. 
 
 ##Installing Xcode
-- Command line tools
+- Command line tools (xcode-select -install)
 
 ##Running the examples
 
