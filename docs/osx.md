@@ -4,21 +4,20 @@ OS X
 ====
 To use openFrameworks with OS X, you need to have Xcode installed. 
 
-Installing Xcode
-----------------
+##Installing Xcode
+-Command line tools
 
-Running the examples
---------------------
+##Running the examples
 
-Running older examples
----------------------
+##Using addons
 
 
 Common issues
 -------------
 - Lexical or Preprocessor Issue: "'tr1/memory' not found" (wrong Base SDK)
 - Workspace integrity
-
+- "TargetConditionals.h" not found
+- Undefined symbols for architecture i386
 
 
 Creating a new openFrameworks project
