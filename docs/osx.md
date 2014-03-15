@@ -5,10 +5,19 @@ OS X
 To use openFrameworks with OS X, you need to have Xcode 4+ installed. 
 
 ##Installing Xcode
-Download Xcode from the App Store the install the command line tools
-- Command line tools (xcode-select -install)
+Download Xcode from the App Store and install the Command line tools by using the Download tab in the Xcode preferences or typing "xcode-select -install" in your Terminal.
 
 ##Running the examples
+The first thing to do after installing Xcode is to check everything is working and to run some of the provided examples.
+
+You can run any project in the examples folder by opening its relative .xcodeproj file.
+
+(screenshot of GraphicsExample)
+
+Each project contains schemes for building OpenFrameworks and the project itself. For compiling the project make sure the example's scheme (in our case GraphicsExample) is selected and hit the Build & Run button (cmd + R).
+
+(screenshot of GraphicsExample)
+
 
 ##Including addons to your project
 1. Right click the "addons" group in your project 
