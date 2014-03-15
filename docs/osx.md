@@ -12,20 +12,24 @@ After downloading Xcode from the App Store, make sure to install the Xcode Comma
 Running the examples
 ---------------------------------------------
 You can run any project in the examples folder by opening its relative .xcodeproj file.
-![The .xcodeproj file](http://i.imgur.com/My2qpoY.png)
 
-
-Each project contains [schemes](https://developer.apple.com/library/mac/featuredarticles/XcodeConcepts/Concept-Schemes.html) for building OpenFrameworks and the project itself. For compiling the project make sure the example's scheme is selected and hit the Build & Run button (cmd + R).
-
-![](http://i.imgur.com/A4GZsgT.png)
+![The .xcodeproj file of the GraphicsExample ](http://i.imgur.com/0WbPVqF.png)
 
 
 
+Each project needs to be built before it can run, Xcode uses [schemes](https://developer.apple.com/library/mac/featuredarticles/XcodeConcepts/Concept-Schemes.html) to define the products to build. Usually you will find three schemes: OpenFrameworks, a debug and a release target for the example.
 
-The difference between Debug and Release mode
----------------------------------------------
-These are two build configurations, "Debug" and "Release".
+To run the project make sure the debug example's scheme is selected and hit the Build & Run button (cmd + R).
 
+![The Build & Run button is the triangular one ;)](http://i.imgur.com/A4GZsgT.png)
+
+
+The Console
+-----------------------------------------------
+
+
+The difference between Debug and Release scheme
+-----------------------------------------------
 - Debug is useful when developing your project, as it will provide the most information about where and why something crashed.
 - Release is useful when you're done developing your project. Release will create a smaller, faster app -- but it won't give you much information if it crashes.
 
