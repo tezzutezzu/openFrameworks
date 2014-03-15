@@ -4,11 +4,15 @@ OS X
 ====
 To use openFrameworks with OS X, you need to have Xcode 4+ installed. 
 
-##Installing Xcode
-Download Xcode from the App Store and install the Command line tools by using the Download tab in the Xcode preferences or typing "xcode-select -install" in your Terminal.
+Installing Xcode
+---------------------------------------------
+Download Xcode from the App Store. 
+After the installation, make sure to download and install the Command line tools using the Download tab in the Xcode preferences or typing "xcode-select -install" in your Terminal.
 
-##Running the examples
-The first thing to do after installing Xcode is to check everything is working and to run some of the provided examples.
+
+Running the examples
+---------------------------------------------
+Let's check everything is working by running some of the provided examples.
 
 You can run any project in the examples folder by opening its relative .xcodeproj file.
 
@@ -19,19 +23,14 @@ Each project contains schemes for building OpenFrameworks and the project itself
 (screenshot of GraphicsExample)
 
 
-##Including addons to your project
-1. Right click the "addons" group in your project 
-2. Select New Group 
-3. Name the group whatever the addon is 
-4. Drag the 'src' or 'libs' folder in the newly created group from the Finder
 
+The difference between Debug and Release mode
+---------------------------------------------
+These are two build configurations, "Debug" and "Release".
 
-Common issues
--------------
-- Lexical or Preprocessor Issue: "'tr1/memory' not found" (wrong Base SDK)
-- Workspace integrity
-- "TargetConditionals.h" not found
-- Undefined symbols for architecture i386
+- Debug is useful when developing your project, as it will provide the most information about where and why something crashed.
+- Release is useful when you're done developing your project. Release will create a smaller, faster app -- but it won't give you much information if it crashes.
+
 
 
 Creating a new openFrameworks project
@@ -49,12 +48,31 @@ For example:
 
 ###Using Project Generator
 
-The difference between Debug and Release mode
----------------------------------------------
-These are two build configurations, "Debug" and "Release".
 
-- Debug is useful when developing your project, as it will provide the most information about where and why something crashed.
-- Release is useful when you're done developing your project. Release will create a smaller, faster app -- but it won't give you much information if it crashes.
+Including addons to your project
+---------------------------------------------
+Addons can be tricky to add, the best way of adding an addon to your project is:
+
+1. Right click the "addons" group in your project 
+2. Select New Group 
+3. Name the group whatever the addon is 
+4. Drag the 'src' or 'libs' folder in the newly created group from the Finder
+
+(screenshot of final folder structure)
+
+
+
+Failed  
+-------------
+If your sketch failed to build 
+
+- Lexical or Preprocessor Issue: "'tr1/memory' not found" (wrong Base SDK)
+- Workspace integrity
+- "TargetConditionals.h" not found
+- Undefined symbols for architecture i386
+
+
+
 
 
 openFrameworks resources
