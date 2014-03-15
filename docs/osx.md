@@ -18,7 +18,7 @@ OS X
 
 [Renaming Projects](#renaming)
 
-[Failed Builds](#addons)
+[Why my app doesn't run? aka Common build errors](#addons)
 
 [openFrameworks resources](#addons)
 
@@ -28,47 +28,50 @@ Installing Xcode
 ---------------------------------------------
 To use openFrameworks with OS X, you need to have Xcode 4+ installed. 
 
-You can download and install Xcode from the App Store.
+You can download and install Xcode from the App Store. After the installation, make sure to install the Xcode command line tools.
 
-After the Xcode installation, make sure to install the Xcode command line tools using the Download tab in the Xcode preferences.
-
-You can also install Xcode command line tools typing "xcode-select -install" in your Terminal.
+You can install Xcode command line tool using the Download tab in the Xcode preferences or by typing "xcode-select -install" in your Terminal.
 
 <a name="running" />
 Running the examples
 ---------------------------------------------
-You can run any project in the examples folder by opening its relative .xcodeproj file.
 
 ![The .xcodeproj file of the GraphicsExample ](http://i.imgur.com/0WbPVqF.png)
 
 
+You can run any project in the examples folder by opening its relative .xcodeproj file. 
+
 Each project needs to be built before it can run, Xcode uses [schemes](https://developer.apple.com/library/mac/featuredarticles/XcodeConcepts/Concept-Schemes.html) to define the products to build. 
 
-For each example you will find three schemes: openFrameworks, a debug and a release target for the project.
 
-To run the project make sure the debug example's scheme is selected and hit the Build & Run button (the triangle in the toolabar).
+### Schemes
 
-In this case we're building the GraphicsExample:
+![Building the GraphicsExample](http://i.imgur.com/A4GZsgT.png)
 
-![](http://i.imgur.com/A4GZsgT.png)
+For each example you will find three schemes: openFrameworks, a debug and a release target for the project. To run the project make sure the debug example's scheme is selected and hit the Build & Run button (the triangle in the toolbar).
+
+
+
 
 <a name="errors" />
 Errors and Warnings
 ---------------------------------------------
-While the app is building Xcode will show you the number of warnings (in yellow) and errors (in red). 
-Most of the time you can ignore the warnings, but if your app has a high number of errors it will likely fail building. See below for common issues when building.
-
 ![](http://i.imgur.com/rNUTH7l.jpg)
+
+While the app is building Xcode will show you the number of warnings (in yellow) and errors (in red). 
+Most of the time you can ignore the warnings, but if your app has a high number of errors it will likely fail to build. See below for common issues when building.
 
 
 
 <a name="debugrelease" />
 The difference between Debug and Release scheme
 -----------------------------------------------
-- Debug is useful when developing your project, as it will provide the most information about where and why something crashed.
-- Release is useful when you're done developing your project. Release will create a smaller, faster app -- but it won't give you much information if it crashes.
-
 ![](http://i.imgur.com/kBelTKn.png)
+
+
+- Debug is useful when developing your project, as it will provide the most information about where and why something crashed.
+- Release is useful when you're done developing your project. It will create a smaller, faster app but it won't give you much information if it crashes.
+
 
 
 
@@ -125,8 +128,8 @@ To change the name of your schemas: click on "Manage schemes" and rename the Sch
 
 
 
-<a name="failed" />
-Failed Build
+<a name="issues" />
+Common issues 
 ---------------------------------------------
 There are a few common issues that cause your sketch build to fail:
 
@@ -134,7 +137,7 @@ There are a few common issues that cause your sketch build to fail:
 -- You need to change your Base SDK (see below) 
 
 - "TargetConditionals.h" not found
--- Xcode Terminal may not be installed (see above for instructions)
+-- Xcode Terminal may not be installed
 
 - Undefined symbols for architecture i386
 -- This usually happens when addons have been added incorrectly (see above for instructions)
@@ -142,7 +145,7 @@ There are a few common issues that cause your sketch build to fail:
 
 ###Change Base SDK
 
-
+<a name="resources" />
 openFrameworks resources
 ------------------------
 If you have questions or issues, the best place to look is the openFrameworks forum: 
