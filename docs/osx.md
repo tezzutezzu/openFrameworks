@@ -2,14 +2,19 @@
 
 OS X
 ====
-To use openFrameworks with OS X, you need to have Xcode installed. 
+To use openFrameworks with OS X, you need to have Xcode 4+ installed. 
 
 ##Installing Xcode
+Download Xcode from the App Store the install the command line tools
 - Command line tools (xcode-select -install)
 
 ##Running the examples
 
-##Using addons
+##Including addons to your project
+1. Right click the "addons" group in your project 
+2. Select New Group 
+3. Name the group whatever the addon is 
+4. Drag the 'src' or 'libs' folder in the newly created group from the Finder
 
 
 Common issues
