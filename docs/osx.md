@@ -2,13 +2,35 @@
 
 OS X
 ====
-To use openFrameworks with OS X, you need to have Xcode 4+ installed. 
 
+
+[Installing Xcode](#installing)
+
+[Running the examples](#running)
+
+[Errors and Warnings](#errors)
+
+[The difference between Debug and Release scheme](#debugrelease)
+
+[Creating a new openFrameworks project](#creatingnew)
+
+[Including addons to your project](#addons)
+
+[Renaming Projects](#renaming)
+
+[Failed Builds](#addons)
+
+[openFrameworks resources](#addons)
+
+
+<a name="installing" />
 Installing Xcode
 ---------------------------------------------
+To use openFrameworks with OS X, you need to have Xcode 4+ installed. 
+
 After downloading Xcode from the App Store, make sure to install the Xcode Command line tools using the Download tab in the Xcode preferences or typing "xcode-select -install" in your Terminal.
 
-
+<a name="running" />
 Running the examples
 ---------------------------------------------
 You can run any project in the examples folder by opening its relative .xcodeproj file.
@@ -17,17 +39,23 @@ You can run any project in the examples folder by opening its relative .xcodepro
 
 
 
-Each project needs to be built before it can run, Xcode uses [schemes](https://developer.apple.com/library/mac/featuredarticles/XcodeConcepts/Concept-Schemes.html) to define the products to build. Usually you will find three schemes: OpenFrameworks, a debug and a release target for the example.
+Each project needs to be built before it can run, Xcode uses [schemes](https://developer.apple.com/library/mac/featuredarticles/XcodeConcepts/Concept-Schemes.html) to define the products to build. Usually you will find three schemes: openFrameworks, a debug and a release target for the example.
 
 To run the project make sure the debug example's scheme is selected and hit the Build & Run button (cmd + R).
 
 ![The Build & Run button is the triangular one ;)](http://i.imgur.com/A4GZsgT.png)
 
+<a name="errors" />
+Errors and Warnings
+---------------------------------------------
+Whilst you're 
 
-The Console
------------------------------------------------
+![](http://i.imgur.com/rNUTH7l.jpg)
 
 
+
+
+<a name="debugrelease" />
 The difference between Debug and Release scheme
 -----------------------------------------------
 - Debug is useful when developing your project, as it will provide the most information about where and why something crashed.
@@ -36,6 +64,8 @@ The difference between Debug and Release scheme
 ![](http://i.imgur.com/kBelTKn.png)
 
 
+
+<a name="creatingnew" />
 Creating a new openFrameworks project
 -------------------------------------
 
@@ -55,21 +85,7 @@ For example:
 - Inside the myApp/ folder rename the .xcodeproj file to myApp.xcodeproj
 - Open myApp.xcodeproj
 
-
-
-Renaming Projects
----------------------------------------------
-To rename your project name click twice (as you usually do in OSX) on the project icon 
-![Project renaming](http://i.imgur.com/BOHaTq6.png)
-
-To change the name of your schemas: click on "Manage schemes" and rename the Schemes by selecting and clicking twice on them (as per above) or by just hitting Enter
-
-![](http://i.imgur.com/8cHC9eB.png)
-
-![](http://i.imgur.com/NNtXWO3.png)
-
-
-
+<a name="addons" />
 Including addons to your project
 ---------------------------------------------
 Addons can be tricky to add, the best way of adding an addon to your project is:
@@ -85,29 +101,39 @@ Xcode is smart enough to add the eventual Header paths to your project so you do
 (screenshot of final folder structure)
 
 
-Errors and Warnings
+<a name="renaming" />
+Renaming Projects
 ---------------------------------------------
+To rename your project name click twice (as you usually do in OSX) on the project icon 
+![Project renaming](http://i.imgur.com/BOHaTq6.png)
+
+To change the name of your schemas: click on "Manage schemes" and rename the Schemes by selecting and clicking twice on them (as per above) or by just hitting Enter
+
+![](http://i.imgur.com/8cHC9eB.png)
+
+![](http://i.imgur.com/NNtXWO3.png)
 
 
-![](http://i.imgur.com/rNUTH7l.jpg)
 
 
+
+
+<a name="failed" />
 Failed Build
 ---------------------------------------------
 There are a few common issues that cause your sketch build to fail:
 
 - Lexical or Preprocessor Issue: "'tr1/memory' not found"
-You need to change your Base SDK (see below) 
+-- You need to change your Base SDK (see below) 
 
 - "TargetConditionals.h" not found
-Xcode Terminal may not be installed (see above for instructions)
+-- Xcode Terminal may not be installed (see above for instructions)
 
 - Undefined symbols for architecture i386
-This usually happens when addons have been added incorrectly (see above for instructions)
+-- This usually happens when addons have been added incorrectly (see above for instructions)
 
 
-Change Base SDK
----------------------------------------------
+###Change Base SDK
 
 
 openFrameworks resources
