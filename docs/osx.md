@@ -18,9 +18,9 @@ OS X
 
 [Renaming Projects](#renaming)
 
-[Why my app doesn't run? aka Common build errors](#addons)
+[Why my app doesn't run? – Common build errors](#issues)
 
-[openFrameworks resources](#addons)
+[openFrameworks resources](#resources)
 
 
 <a name="installing" />
