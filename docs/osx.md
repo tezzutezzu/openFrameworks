@@ -28,9 +28,9 @@ Installing Xcode
 ---------------------------------------------
 To use openFrameworks with OS X, you need to have Xcode 4+ installed. 
 
-You can download and install Xcode from the App Store. After the installation, make sure to install the Xcode command line tools.
+You can download and install Xcode from the App Store. After the installation, make sure to also install the Xcode command line tools.
 
-You can install Xcode command line tool using the Download tab in the Xcode preferences or by typing "xcode-select -install" in your Terminal.
+You can install the Xcode command line tools using the Download tab in the Xcode preferences or by typing "xcode-select -install" in your Terminal.
 
 <a name="running" />
 Running the examples
@@ -41,16 +41,16 @@ Running the examples
 
 You can run any project in the examples folder by opening its relative .xcodeproj file. 
 
-Each project needs to be built before it can run, Xcode uses [schemes](https://developer.apple.com/library/mac/featuredarticles/XcodeConcepts/Concept-Schemes.html) to define the products to build. 
+Before a project can be run it needs to be compiled. Xcode uses [schemes](https://developer.apple.com/library/mac/featuredarticles/XcodeConcepts/Concept-Schemes.html) to define the programs to compile. 
 
 
 ### Schemes
 
 ![Building the GraphicsExample](http://i.imgur.com/A4GZsgT.png)
 
-For each example you will find three schemes: openFrameworks, a debug and a release target for the project. To run the project make sure the debug example's scheme is selected and hit the Build & Run button (the triangle in the toolbar).
+For each example you will find three schemes: one for openFrameworks and two for the example: Debug and Release. 
 
-
+To run the project make sure the Debug example's scheme is selected and hit the Build & Run button (the triangle in the toolbar).
 
 
 <a name="errors" />
@@ -58,7 +58,8 @@ Errors and Warnings
 ---------------------------------------------
 ![](http://i.imgur.com/rNUTH7l.jpg)
 
-While the app is building Xcode will show you the number of warnings (in yellow) and errors (in red). 
+While the app is building Xcode will show you a number of warnings (in yellow) and errors (in red). 
+
 Most of the time you can ignore the warnings, but if your app has a high number of errors it will likely fail to build. See below for common issues when building.
 
 
